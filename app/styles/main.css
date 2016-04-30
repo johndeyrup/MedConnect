@@ -1,0 +1,19 @@
+#meds {
+	background-color: orange;
+}
+
+#notif {
+	background-color: yellow;
+}
+
+#calendar {
+	background-color: teal;
+}
+
+.col-xs-6 {
+	height: 550px;
+}
+
+.col-xs-4 {
+	height: 350px;
+}
