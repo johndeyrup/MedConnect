@@ -1,19 +1,25 @@
-#meds {
-	background-color: orange;
+.date {
+	height: 60px;
+	text-align: center;
 }
 
-#notif {
-	background-color: yellow;
+.date-header{
+	text-align: center;
+	font-size: 2em;
 }
 
-#calendar {
-	background-color: teal;
+.month-cap {
+	text-align: center;
+	font-size: 2.5em;
+	font-weight: bold;
 }
 
-.col-xs-6 {
-	height: 550px;
+li {
+	list-style-type: none;
+	padding: 10px;
 }
 
-.col-xs-4 {
-	height: 350px;
+.day {
+	font-size: 1.5em;
+	font-weight: bold;
 }

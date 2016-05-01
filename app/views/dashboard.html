@@ -1,68 +1,13 @@
 <div class="container-fluid">
-	<div class="row">
-
-		<div class="col-xs-4" id="notif">
-			<h2>Notifications</h2>
-			<form role="form">
-				<div class="checkbox">
-					<label><input type="checkbox" value="">Take 10mg of Penicillin at 8 am</label>
-				</div>
-				<div class="checkbox">
-					<label><input type="checkbox" value="">Take 5mg of Drug at  9 pm</label>
-				</div>
-				<div class="checkbox">
-					<label><input type="checkbox" value="">Exercise for 30 minutes</label>
-				</div>
-			</form>
-		</div>
-
-		<div class="col-xs-4" id="meds">
-			<h2>Medicine</h2>
-			<ul>
-				<li>
-					<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#drug">
-					<span class="glyphicon glyphicon-plus"></span>Metoprolol tartrate</button>
-					<div class="collapse" id="drug">
-						<table class="table table-bordered">
-							<tr>
-								<td>Medication Name</td>
-								<td>Metoprolol tartrate</td>
-							</tr>
-							<tr>
-								<td>Medication Name</td>
-								<td>RxNorm</td>
-							</tr>
-							<tr>
-								<td>Dosage</td>
-								<td>50mg</td>
-							</tr>
-							<tr>
-								<td>Form of Administration</td>
-								<td>Tablet</td>
-							</tr>
-							<tr>
-								<td>Instructions</td>
-								<td>Twice Daily 8am, 6pm</td>
-							</tr>
-							<tr>
-								<td>Reason</td>
-								<td>High Blood Pressure</td>
-							</tr>
-						</table>
-					</div>
-				</li>
-				<li>
-					<button class="btn btn-primary">Other Medication</button>
-				</li>
-			</ul>
-		</div>
-
-
-	</div>
-	<div class="row">
-		<div class="col-xs-6" id="calendar">
-			<h2>Calendar</h2>
-			  <div ui-calendar="calendarOptions" ng-model="eventSources" calendar="myCalendar"></div>
-		</div>
-	</div>
+	<table class="table table-bordered">
+		<caption class="month-cap">{{month}}</caption>
+		<thead>
+			<tr>
+				<th class="date-header" ng-repeat="day in days_week">{{day}}</th>
+			</tr>
+		</thead>
+		<tr>
+			<td class="date" ng-repeat="day_num in days_left track by $index"><span class="day">{{day_num}}</span></td>
+		</tr>
+	</table>
 </div>
