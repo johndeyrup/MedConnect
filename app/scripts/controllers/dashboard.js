@@ -15,12 +15,13 @@ angular.module('chronicCareApp')
   	"October", "November", "December"];
   	var date = new Date();
   	var this_month = date.getMonth() + 1;
-  	$scope.month = months[this_month];
+  	$scope.month = months[this_month-1];
   	var today = date.getDay();
   	var this_day = date.getDate();
   	var this_year = date.getFullYear();
   	var next_week = [];
   	var max_date = new Date(this_year, this_month, 0).getDate();
+  	console.log(max_date);
   	for (var i = 0; i < 7; i++) {
   		if(this_day + i > max_date) {
   			this_day = 1;

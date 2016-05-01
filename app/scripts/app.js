@@ -21,12 +21,12 @@ angular
   ])
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/', {
+      .when('/calendar', {
         templateUrl: 'views/dashboard.html',
         controller: 'DashboardCtrl',
         controllerAs: 'dashboard'
       })
-      .when('/medicine', {
+      .when('/', {
         templateUrl: 'views/medicine.html',
         controller: 'MedicineCtrl',
         controllerAs: 'medicine'
