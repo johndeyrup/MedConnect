@@ -9,5 +9,16 @@
 		<tr>
 			<td class="date" ng-repeat="day_num in days_left track by $index"><span class="day">{{day_num}}</span></td>
 		</tr>
+		<tr>
+			<td ng-repeat="week_sched in medicine_list">
+				<ul class="list-group">
+					<li class="list-group-item" ng-repeat="day_sched in week_sched">
+						<input type="checkbox">{{day_sched}}
+					</li>
+				</ul>
+
+				</tr>
+			</td>
+		</tr>
 	</table>
 </div>

@@ -35,7 +35,20 @@ angular.module('chronicCareApp')
   	$scope.days_week = $scope.days_week.slice(today).concat($scope.days_week.slice(0,today));
   	$scope.days_left = next_week;
   	
-  	
+  	$scope.medicine_list = [["Insulin glargine - 8 pm", "Calcium acetate - 3 times a day (with every meal)", "Lisinopril 8am",
+  	"Carvedilol - 8 am, 8 pm", "Atorvastatin - 8pm", "Aspirin - 8am", "Furosemide - 8 am", "Sertraline - 8pm"], 
+  	["Insulin glargine - 8 pm", "Calcium acetate - 3 times a day (with every meal)", "Lisinopril 8am",
+  	"Carvedilol - 8 am, 8 pm", "Atorvastatin - 8pm", "Aspirin - 8am", "Furosemide - 8 am", "Sertraline - 8pm", "Calcium acetate - 3 times day with meal"],
+  	["Insulin glargine - 8 pm", "Calcium acetate - 3 times a day (with every meal)", "Lisinopril 8am","Carvedilol - 8 am, 8 pm", "Atorvastatin - 8pm", 
+  	"Aspirin - 8am", "Furosemide - 8 am", "Sertraline - 8pm"],
+  	["Insulin glargine - 8 pm", "Calcium acetate - 3 times a day (with every meal)", "Lisinopril 8am","Carvedilol - 8 am, 8 pm", "Atorvastatin - 8pm", 
+  	"Aspirin - 8am", "Furosemide - 8 am", "Sertraline - 8pm", "Calcium acetate - 3 times day with meal"],
+  	["Insulin glargine - 8 pm", "Calcium acetate - 3 times a day (with every meal)", "Lisinopril 8am","Carvedilol - 8 am, 8 pm", "Atorvastatin - 8pm", 
+  	"Aspirin - 8am", "Furosemide - 8 am", "Sertraline - 8pm"],
+  	["Insulin glargine - 8 pm", "Calcium acetate - 3 times a day (with every meal)", "Lisinopril 8am","Carvedilol - 8 am, 8 pm", "Atorvastatin - 8pm", 
+  	"Aspirin - 8am", "Furosemide - 8 am", "Sertraline - 8pm", "Calcium acetate - 3 times day with meal"],
+  	["Insulin glargine - 8 pm", "Calcium acetate - 3 times a day (with every meal)", "Lisinopril 8am","Carvedilol - 8 am, 8 pm", "Atorvastatin - 8pm", 
+  	"Aspirin - 8am", "Furosemide - 8 am", "Sertraline - 8pm"]]
 
 
   });
