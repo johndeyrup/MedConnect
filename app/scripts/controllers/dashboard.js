@@ -35,7 +35,7 @@ angular.module('chronicCareApp')
   	$scope.days_week = $scope.days_week.slice(today).concat($scope.days_week.slice(0,today));
   	$scope.days_left = next_week;
   	
-
+  	
 
 
   });
